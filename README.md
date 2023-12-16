@@ -3,7 +3,6 @@
 ## Description ##
 
 
-https://annac0rmier.github.io/SEO-Refactor-/
 
 As a Developer, I was challenged to refactor a website by making the html file more semantically correct, along with consolidating the CSS rules so that it is clean and orignaized.
 In real world situations a project like this is useful so that the code is easier to read and understand for anyone who may view it. 
