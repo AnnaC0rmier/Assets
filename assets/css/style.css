@@ -8,6 +8,9 @@ body {
     background-color: #d9dcd6;
 }
 
+/* everything that is currently targeting the header was previously .header before i made changes to the html file
+     origionally there was a div with the class as header. I instead just changed the div to a header so now i am targeting that specific element */
+
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -86,55 +89,34 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* I changed this selector to .benefits it allows for this specific div and all of its children to have the same margin and text color
+    previously each div within this section was targeted seperatley */
+
+.benefits {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* I changed this selector to target the section with the class attribute benefits along with their h3 elements
+   This allowed them to all have the same margin and have a text align of center */
+.benefits h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* I changed this selector to target the section with the class attribute of benefits along with their images. This allowed for their
+  display to be block which causes the elements to stack on top of one another, the margin is the same, and the max-width it will take up is 150px */
+.benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/* Here I targeted every div within the section of content. I tried to just do a selector of content to target everything within the section
+    Im not sure why this wouldnt work. So while i am sure there is a better way to do this, I beleive having at least one rule that applies
+      to each div is better than having a rule for each. */
+.search-engine-optimization, .online-reputation-management, .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,50 +125,24 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
 
-.search-engine-optimization img {
+/* Here I changed the selector to include each div in the section of content along with their images.
+    I did try to use a selector that targeted the whole section but i could not get it to apply to style properly.
+     I also noticed that whenever i didnt put an image selector next to each class selector the style would not apply properly
+      Honeslty im not sure why, feedback is appreciated */
+.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
     max-height: 200px;
-}
+    }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+    /* Here i changed the selector to include each div in the section of content along with their h2 elements.
+         As I did in the coment above, I noticed i had to have an h2 selector along with every div for it to work properly
+          */
+ .search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
-}
+} 
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
 
 .footer {
     padding: 30px;
